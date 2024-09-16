@@ -1,6 +1,6 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {  Route, Routes, BrowserRouter, HashRouter } from 'react-router-dom';
 
 
 import { Page2 } from './components/Page2';
@@ -23,7 +23,7 @@ const newQuery = new QueryClient();
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       
       
      <Header>My Products</Header>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/page2" element={<Page2 />} />
         </Routes>
       </QueryClientProvider>
-    </Router>
+    </HashRouter>
   );
 }
 

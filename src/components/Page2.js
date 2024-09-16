@@ -77,21 +77,21 @@ export const Page2 = () => {
           label="Product Name"
           rules={[{ required: true}]}
         >
-          <Input />
+          <Input  disabled/>
         </Form.Item>
         <Form.Item
           name="price"
           label="Price"
           rules={[{ required: true}]}
         >
-          <Input type="number" />
+          <Input type="number" disabled/>
         </Form.Item>
         <Form.Item
           name="category"
           label="Category"
           rules={[{ required: true }]}
         >
-          <Input />
+          <Input disabled />
         </Form.Item>
         <Submit
           type="primary"
